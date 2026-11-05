@@ -2,6 +2,8 @@
 
 Organização de biblioteca:
 
+-digitar a data antes de abrir o sistema(não permitindo que a data seja anterior a ultima registrada)
+
 -inclusão de livros(Nome, autor, quantidade) - já incluso dentro do codigo
 
 -empréstimo de livro(nome da pessoa, data de empréstimo, nome do livro emprestimado, data de devolução(30 dias para devolução))
@@ -12,6 +14,5 @@ Organização de biblioteca:
 
 -deixar os livros pré cadastrados
 
--aviso livro em atraso e possível multa
+-lista de livro em atraso e possível multa
 
--
