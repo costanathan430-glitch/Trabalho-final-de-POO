@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
 class Livro:
-   
+   #pesquisar funcao que muda o formato
     def __init__(self, titulo: str, autor: str, isbn: str, ano: int, quantidade: int = 1):
 
         self.titulo = titulo
@@ -10,6 +10,9 @@ class Livro:
         self.ano = ano
         self.quantidade_total = quantidade
         self.quantidade_disponivel = quantidade
+    
+    def __repr__(self):
+        return f"(Livro('{self.titulo}', '{self.autor}')"
 
 
     def disponivel(self) -> bool:

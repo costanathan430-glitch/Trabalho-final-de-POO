@@ -1,13 +1,13 @@
 from biblioteca import Biblioteca
-from acervo import criar_acervo_inicial
 #chamo criar_acervo_inicial e salvo em uma variavel
+from acervo import criar_acervo_inicial
 
+acervos = criar_acervo_inicial()
+ 
  #criar funcao pra digitar a data para o sistema
  
- 
- 
 while True:
-    print("/n BIBLIOTECA /n")
+    print("\n BIBLIOTECA \n")
     print("Ver acervo (1) ")
     print("Cadastrar usuario (2) ")
     print("Pegar emprestado (3) ")
@@ -17,19 +17,19 @@ while True:
     print("Sair do sistema (7) ")
 
     try:
-        opcao = int(input("Escolha uma opcao"))
+        opcao = int(input("Escolha uma opcao: "))
         if opcao == 1:
-            pass
-         #print de livros
+            print(acervos)
+         #print dos livros
          
         elif opcao == 2:
-            nome = imput ("digite seu usuario:")
+            nome = imput ("digite seu usuario: ")
         #puxa a biblioteca para cadastrar o usuario
 
 
         elif opcao == 3:
-            nome = input("Usuario:")
-            livro = input("Livro desejado:")
+            nome = input("Usuario: ")
+            livro = input("Livro desejado: ")
         # puxa o usuario e busca o livro e guarda no emprestado
 
         elif opcao == 4:
