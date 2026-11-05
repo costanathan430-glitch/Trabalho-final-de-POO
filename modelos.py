@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 
 class Livro:
+   
     def __init__(self, titulo: str, autor: str, isbn: str, ano: int, quantidade: int = 1):
 
         self.titulo = titulo
@@ -18,7 +19,7 @@ class Livro:
         return (f"[{self.isbn}] {self.titulo} - {self.autor} (self.ano) |"
                 f"{self.quantidade_disponivel}/{self.quantidade_total} disponiveis")
 
-    def para_lista(self):
+    def para_list(self):
         return {
             "titulo": self.titulo,
             "autor": self.autor,
@@ -29,7 +30,7 @@ class Livro:
         }
 
     @staticmethod
-    def de_lista(dados: lista):
+    def de_list(dados: list):
         livro = Livros(
             dados["titulo"], dados["autor"], dados[isbn],
             dados["ano"], dados["quantidade_total"]
@@ -49,13 +50,13 @@ class Cliente(Pessoa):
     def __init__(self, nome: str, cpf: str):
         super().__init__(nome, cpf)
 
-    def para_lista(self):
+    def para_list(self):
         return{
             "nome": self.nome,
             "cpf": self.cpf,
         }
     @staticmethod
-    def para_lista(dados: lista):
+    def para_list(dados: list):
         return Cliente(dados["nome"], dados["cpf"])
 
 class Emprestimo:
